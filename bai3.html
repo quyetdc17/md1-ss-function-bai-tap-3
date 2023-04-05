@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 3</title>
+</head>
+<body>
+<script>
+    let a = +prompt("enter number a");
+    let b = +prompt("enter number b");
+    let sum = a + b;
+
+    function number(y, z) {
+        if (y < z) {
+            alert("number a < number");
+            y = +prompt("enter number a"), z = +prompt("enter number b");
+            number(y, z);
+        } else {
+            alert("sum of number a,b is -->" + sum)
+            return
+        }
+        // while (y < z) {
+        //     alert("number a < number");
+        //     y = prompt("enter number a"),z=+prompt("enter number b") ;
+        //
+        // } if (y<=z) {
+        //     alert("sum of number a,b is -->" + sum)
+        // }
+    }
+
+    number(a, b)
+</script>
+</body>
+</html>
